@@ -1,0 +1,30 @@
+@mixin translate($x, $y) {
+	-webkit-transform: translate($x, $y);
+	   -moz-transform: translate($x, $y);
+	    -ms-transform: translate($x, $y);
+	     -o-transform: translate($x, $y);
+	        transform: translate($x, $y);
+}
+
+@mixin animationFrames($offset){
+	0% { @include translate(0, 0) }
+	25% { @include translate(-$offset, 0) }
+	50% { @include translate($offset/2, 0) }
+	75% { @include translate(-$offset, 0) }
+	100% { @include translate(0, 0) }
+}
+
+@-webkit-keyframes shake { @include animationFrames(20px); }
+@-moz-keyframes shake { @include animationFrames(20px); }
+@-ms-keyframes shake { @include animationFrames(20px); }
+@-o-keyframes shake { @include animationFrames(20px); }
+@keyframes shake { @include animationFrames(20px); }
+
+
+@mixin animation($name, $time: .3s){
+	-webkit-animation: $name $time;
+	   -moz-animation: $name $time;
+	    -ms-animation: $name $time;
+	     -o-animation: $name $time;
+	        animation: $name $time;
+}

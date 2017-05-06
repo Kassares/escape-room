@@ -1,0 +1,27 @@
+/*  =========== fonts ===========  */
+@font-face {
+	font-family: Alsschlangeblack;
+	src: url(../fonts/alsschlangeblack.otf);
+}
+@font-face {
+	font-family: alsschlangebold;
+	src: url(../fonts/alsschlangebold.otf);
+}
+@font-face {
+	font-family: alsschlangeregular;
+	src: url(../fonts/alsschlangeregular.otf);
+}
+@font-face {
+	font-family: alsschlangeslablight;
+	src: url(../fonts/alsschlangeslablight.otf);
+}
+@font-face {
+	font-family: alsschlangeslabthin;
+	src: url(../fonts/alsschlangeslabthin.otf);
+}
+
+$alblack: "Alsschlangeblack",Arial;
+$albold: "alsschlangebold",Arial;
+$alregular: "alsschlangeregular",Arial;
+$allight: "alsschlangeslablight",Arial;
+$althin: "alsschlangeslabthin",Arial;

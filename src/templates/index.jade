@@ -1,0 +1,302 @@
+doctype html
+html
+  head
+    title Grand escape room
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/png">
+    link()
+    link(rel="stylesheet", href="./vendor/styles/bootstrap.css")
+    link(rel="stylesheet", href="./vendor/styles/jquery.fancybox.css")
+    link(rel="stylesheet", href="./styles/styles.min.css")
+
+  //if lt IE 9
+    script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+    script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+
+  body#page-top
+    
+    nav.navbar.navbar-default.navbar-fixed-top
+      .container
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#navbar')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar    
+          a.navbar-brand(href='#')
+            img(src="./images/logo-min.png" height="57" alt="logotype")
+        #navbar.collapse.navbar-collapse
+          ul.nav.navbar-nav.navbar-right
+            li
+              a.page-scroll(href='#page-top') Главная
+            li
+              a.page-scroll(href='#room') Правила
+            li
+              a.page-scroll(href='#photo') Фото
+            li
+              a.page-scroll(href='#about') О нас
+            li
+              a.page-scroll(href='#schedule') Расписание
+            li
+              a.page-scroll(href='#contacts') Контакты
+            li
+              button#feedback.btn.btn-default.navbar-btn(href="#contacts") Обратная связь
+    header
+      .intro
+          .intro-logo
+            img(src="./images/logo-big.png" alt="big logotype")
+          .intro-title
+            img(src="./images/name.png" alt="title")
+          .intro-text
+            h2 это возможность отлично провести время с друзьями
+      .carousel.slide.carousel-fade#carousel(data-ride="carousel")
+        .carousel-inner
+          .item.active
+          .item
+          .item
+          .item
+
+    section.room#room
+      .container
+        .row.text-center
+          .col-md-4
+            .room-icon
+              img(src="./images/pic-1.png")
+            h4 Цель - выбраться из комнаты
+            p Ваша цель – выполнить миссию квеста, решая головоломки. Находите тайники и решайте загадки.
+          .col-md-4
+            .room-icon
+              img(src="./images/pic-2.png")
+            h4 Команда 2 – 4 человека
+            p Для игры Вам необходимо собрать свою команду. Игроки до 12 лет могут играть лишь в сопровождении взрослых.
+          .col-md-4
+            .room-icon
+              img(src="./images/pic-3.png")
+            h4 Времени лишь 60 минут
+            p Прохождение квеста рассчитано на 60 минут. Если вы не уложитесь в это время, конечно, мы выпустим Вас.
+          
+    section.photo#photo
+      .container
+        .row
+          .col-md-6.thumb
+            a.fancyimage(rel="group" href="./images/photo-1_big.jpg")
+              .thumbnail.animated.fadeInDown
+                img(src="./images/photo-1_small.jpg")
+                .more
+                  i.icon-zoom
+                .mask
+          .col-md-6.thumb
+            a.fancyimage(rel="group" href="./images/photo-2_big.jpg")
+              .thumbnail.animated.fadeInDown
+                img(src="./images/photo-2_small.jpg")
+                .more
+                  i.icon-zoom
+                .mask
+        //
+          .col-md-4.thumb
+            a.fancyimage(rel="group" href="./images/photo-3.png")
+              .thumbnail.animated.fadeInDown
+                img(src="./images/photo-3.png")
+                .more
+                  i.icon-zoom
+                .mask
+    section.about#about
+      .container
+        .col-md-7
+          h2 О нас
+          p Квест в реальности от «Grand» - это живая игра.
+            br
+          p Вы попадаете внутрь и переноситесь в другой мир. Мир со своей историей и атмосферой.
+            
+          p На данный момент открыта одна комната «Сквозь время».
+          
+          p Вы сможете впервые в жизни запустить машину времени, а так же открыть временной портал.
+          
+          p Вашу команду закрывают в помещении. В течение 60 минут Вам предстоит выбраться.
+            | Для этого необходимо применить логику, мышление и внимательность. Так же важны коллективная работа и желание выйти.
+            
+          p Наш администратор (наблюдает всю игру за Вами с помощью камер) сможет помочь Вам в любой затрудненной ситуации.
+          p До прохождения квеста Вам необходимо будет оставить личные вещи в камере хранения (сумки, телефоны, планшеты).
+          p Длительное время Вы поддерживали связь в скайпе со своим хорошим знакомым, который является профессором. Вы решили навестить его, так как хотели вживую увидеть временной портал. Приехав к профессору в кабинет, Вы его там не обнаружили. Вам необходимо разгадать тайну его исчезновения… 
+          p.bold Приходите за новыми впечатлениями. Обещаем Вам бурю эмоций!
+          hr
+          p.small Мы работаем 7 дней в неделю!
+          p.small Необходима предварительная запись на игру
+          
+    section.schedule#schedule
+      .container
+        .col-md-2
+        .col-md-8
+          h2 Расписание 
+          table.table
+            thead
+              tr
+                th
+                th Пн
+                th Вт
+                th Ср
+                th Чт
+                th Пт
+                th Сб
+                th Вс
+            tbody
+              tr
+                th 12
+                  sup 00
+                td.gray 400
+                td.gray 400
+                td.gray 400
+                td.gray 400
+                td.gray 400
+                td 500
+                td 500
+              tr
+                th 13
+                  sup 30
+                td.gray 400
+                td.gray 400
+                td.gray 400
+                td.gray 400
+                td.gray 400
+                td 500
+                td 500
+              tr
+                th 15
+                  sup 00
+                td.gray 400
+                td.gray 400
+                td.gray 400
+                td.gray 400
+                td.gray 400
+                td 500
+                td 500
+              tr
+                th 16
+                  sup 30
+                td.gray 400
+                td.gray 400
+                td.gray 400
+                td.gray 400
+                td.gray 400
+                td 500
+                td 500
+              tr
+                th 18
+                  sup 00
+                td 500
+                td 500
+                td 500
+                td 500
+                td 500
+                td 500
+                td 500
+              tr
+                th 19
+                  sup 30
+                td 500
+                td 500
+                td 500
+                td 500
+                td 500
+                td 500
+                td 500
+              tr
+                th 21
+                  sup 00
+                td 500
+                td 500
+                td 500
+                td 500
+                td 500
+                td 500
+                td 500
+              tr
+                th 22
+                  sup 30
+                td 500
+                td 500
+                td 500
+                td 500
+                td 500
+                td 500
+                td 500
+        .col-md-2
+        .col-md-12.text-center
+          button.btn.btn-xl(href="#myModal" role="button" data-toggle="modal") Забронировать игру
+          #myModal.modal.fade(role='dialog')
+            .modal-dialog.modal-sm
+              .modal-header
+                button.close(type="button" data-dismiss="modal") &times;
+                h4.modal-title Забронируйте игру по номерам
+              .modal-body
+                p 063-517-16-64
+                p 770-76-45
+              .modal-footer
+                button.btn.btn-default(type="button" data-dismiss="modal") Закрыть
+                
+    section.contacts#contacts
+      .container
+        .row
+          .col-md-12
+            .tabs
+              ul.nav.nav-tabs
+                li.active
+                  a(href="#tab-1" data-toggle="tab") Написать нам
+                li
+                  a(href="#tab-2" data-toggle="tab") Контакты
+                li
+                  a(href="#tab-3" data-toggle="tab") Карта проезда
+              .tab-content
+                .tab-pane.fade.in.active#tab-1
+                  .container.text-center
+                    
+                    form#contact-form(action='php/mail.php')
+                      input#name(type="text" name="name" placeholder="Ваше имя *" required)
+                      input#phone(type="tel" name="phone" placeholder="Телефон *" required)
+                      input#email(type="email" name="email" placeholder="Email")
+                      textarea#comment(type="text" name="comment" placeholder="Сообщение *")
+                      br
+                      button.btn.btn-xl#send-mail(type="submit") Отправить
+                    
+                .tab-pane.fade#tab-2
+                  .container
+                    .row
+                      .col-md-4.col-sm-12
+                        img(src="./../images/target.png")
+                        p Фонтанская дорога 20/4
+                        p (7-я ст. Б.Фонтана)
+                        
+                      .col-md-4.col-sm-12
+                        img(src="./../images/phone.png")
+                        p 063 517 16 64
+                        p 770 76 45
+                        
+                      .col-md-4.col-sm-12
+                        img(src="./../images/mail.png")
+                        p escape.room@mail.com
+                        
+                .tab-pane.fade#tab-3
+                  .container
+                    a.dg-widget-link(href="http://2gis.ua/odessa/firm/70000001020935203/center/30.750672999999985,46.42725800000004/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap") Посмотреть на карте Одессы 
+                    .dg-widget-link
+                      a(href="http://2gis.ua/odessa/center/30.750673,46.427258/zoom/16/routeTab/rsType/bus/to/30.750673,46.427258╎Grand, квест-комната?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route") Найти проезд до Grand, квест-комната 
+                    script(charset="utf-8" src="http://widgets.2gis.com/js/DGWidgetLoader.js")
+                    script(charset="utf-8") DGWidgetLoader({"width":100,"height":400,"borderColor":"#a3a3a3","pos":{"lat":46.42725800000004,"lon":30.750672999999985,"zoom":18},"opt":{"city":"odessa"},"org":[{"id":"70000001020935203"}]});
+                    noscript Виджет карты использует JavaScript. Включите его в настройках вашего браузера.
+    .social
+      a(href="http://vk.com/grand_escape_room" target="_blank")  
+        img(src='./images/vk.png')
+      a(href="https://www.instagram.com/grand.escape.room/" target="_blank")    
+        img(src='./images/instagram.png')
+      a(href="https://www.facebook.com/profile.php?id=100010767132342" target="_blank")  
+        img(src='./images/fb.png')
+        
+    script(src='./vendor/scripts/jquery.min.js')
+    script(src='./vendor/scripts/bootstrap.min.js')
+    script(src='./vendor/scripts/jquery.fancybox.js')
+    script (src="http://maps.api.2gis.ru/2.0/loader.js?pkg=full")
+    script(src='./scripts/app.min.js')
